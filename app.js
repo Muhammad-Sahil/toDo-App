@@ -1,5 +1,5 @@
 var a = document.getElementById("full")
-// var input = document.getElementById("inp")
+var input = document.getElementById("inp")
 function foo(){
     var newElement = document.createElement("P")
     var text = inp.value
@@ -27,4 +27,8 @@ e.parentNode.remove()
 }
 function editTodo(e){
     e.parentNode.firstChild.nodeValue = prompt()
+}
+function clearAll(){
+    a.innerHTML = " "
+    inp.value = " "
 }
